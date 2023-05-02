@@ -1,58 +1,50 @@
-/* Global.css */
+
+
+
 @font-face {
     font-family: 'Nineteenth';
     src: url('fonts/Nineteenth.woff2') format('woff2'),
     url('fonts/Nineteenth.woff') format('woff');
 }
 
-/* Zdefiniowanie stylów dla głównego kontenera */
 .main-container {
-    display: flex;                  /* Użycie flexboxa dla umiejscowienia dzieci */
-    flex-direction: column;         /* Układanie dzieci w kolumnie */
-    align-items: flex-start;            /* Wyśrodkowanie dzieci w poziomie */
-    height: 900px;                   /* Wysokość kontenera dopasowana do zawartości */
-    min-height: 100vh;              /* Minimalna wysokość kontenera to 100% wysokości okna przeglądarki */
-    width: 100vw;                   /* Szerokość kontenera to 100% szerokości okna przeglądarki */
-    max-width: 1460px;              /* Maksymalna szerokość kontenera to 1460px */
-    margin: 0 auto;                 /* Wyśrodkowanie kontenera na stronie */
-    overflow: hidden;               /* Ukrycie zawartości przekraczającej kontener */     /* Dodanie odstępu wewnętrznego po bokach kontenera */
-    font-family: Nineteenth; /* Użycie fontu Nineteenth */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 1460px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: Nineteenth;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-
-/* Zdefiniowanie stylów dla kontenera paska nawigacyjnego */
 .navbar-wrapper {
-    position: relative;             /* Pozycja względna względem main container */
-    width: auto;                    /* Szerokość kontenera to 100% szerokości rodzica (main container) */
+    position: relative;
+    width: auto;
     margin: 0;
-
 }
 
-/* Zdefiniowanie stylów dla paska nawigacyjnego */
 .navbar-container {
-    position: absolute;             /* Pozycja względna względem rodzica (navbar wrapper) */
-    display: flex;                  /* Użycie flexboxa dla umiejscowienia dzieci */
-    flex-direction: column;         /* Układanie dzieci w kolumnie */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    /* Wyśrodkowanie dzieci w poziomie */
-    width: 100%;                    /* Szerokość kontenera to 100% szerokości rodzica (navbar wrapper) */
-    top: 0;                         /* Odległość od górnej krawędzi rodzica (navbar wrapper) */
+    width: 100%;
+    top: 0;
     right: 0;
     padding-left: 0;
-
 }
-
-
-
 
 .top-smaller {
     position: relative;
     top: 0;
     right: 0;
-
-
     width: auto;
     height: 80px;
     background: transparent url('assets/Top-Smaller.png') 0% 0% no-repeat padding-box;
@@ -71,20 +63,18 @@
 .logo {
     position: absolute;
     top: 9px;
-    left: 4px;
+    left: 10px;
     width: 63px;
     height: 78px;
     background: transparent url('assets/Logo.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 .flag {
-    position: absolute; /* Pozycjonowanie flagi względem rodzica */
-    border: none; /* Usunięcie domyślnych obramowań */
-    cursor: pointer; /* Ustawienie kursora myszy jako wskaźnika */
+    position: absolute;
+    border: none;
+    cursor: pointer;
     box-sizing: border-box;
     overflow: hidden;
-
-
 }
 
 .flag img {
@@ -94,29 +84,25 @@
 }
 
 .flag.english {
-    top: 22px; /* Ustawienie odległości od górnej krawędzi rodzica */
-    left: 1255px; /* Ustawienie odległości od lewej krawędzi rodzica */
-    width: 90px; /* Szerokość kontenera flagi */
-    height: 45px; /* Wysokość kontenera flagi */
-    mix-blend-mode: luminosity; /* Tryb mieszania tła dla efektu szarości */
-    opacity: 1; /* Przezroczystość flagi */
+    top: 22px;
+    left: 1255px;
+    width: 85px;
+    height: 45px;
+    mix-blend-mode: luminosity;
+    opacity: 1;
 }
 .flag.polish {
-    top: 22px; /* Ustawienie odległości od górnej krawędzi rodzica */
-    left: 1343px; /* Ustawienie odległości od lewej krawędzi rodzica */
-    width: 90px; /* Szerokość kontenera flagi */
-    height: 45px; /* Wysokość kontenera flagi */
-
-    mix-blend-mode: luminosity; /* Tryb mieszania tła dla efektu szarości */
-
-    opacity: 1; /* Przezroczystość flagi */
-
+    top: 22px;
+    left: 1343px;
+    width: 85px;
+    height: 45px;
+    mix-blend-mode: luminosity;
+    opacity: 1;
 }
 
 .flag:hover {
-    mix-blend-mode: normal; /* Przywrócenie normalnego trybu mieszania na hover */
+    mix-blend-mode: normal;
 }
-
 
 .slogan {
     position: absolute;
@@ -133,9 +119,7 @@
     color: #FFFFFF;
     opacity: 1;
     margin: 0;
-    font-weight: normal;
 }
-
 
 .slogan p {
     width: 381px;
@@ -148,19 +132,14 @@
     white-space: nowrap;
     margin-top: 5px;
 }
-
-
-
-
-/* Zdefiniowanie stylów dla kontenera z grafikami */
 .graphics-container {
-    display: flex;                  /* Użycie flexboxa dla umiejscowienia dzieci */
-    justify-content: space-between; /* Rozmieszczenie dzieci z równym odstępem */
-    align-items: center;        /* Wyrównanie dzieci do górnej krawędzi kontenera */
-    width: 100%;                  /* Szerokość kontenera to 100% szerokości rodzica (main container) */
-    position: relative;             /* Pozycja względna względem rodzica (main container) */
-    top: -50px;                     /* Przesunięcie kontenera w górę o 50px */
-    z-index: 1;                     /* Określenie indeksu warstwy kontenera (niższa wartość niż navbar) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    z-index: 1;
 }
 
 .graphic-krk-container,
@@ -177,9 +156,13 @@
 .graphic-zako-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Skalowanie proporcjonalne obrazka */
-    filter: brightness(0.2); /* Przekształcenie obrazków na czarno-złote */
-    transition: filter 0.666s ease-in-out; /* Dodanie płynnego przejścia dla efektu szarości */
+    object-fit: cover;
+    filter: brightness(0.2);
+    transition: filter 0.666s ease-in-out;
+    -webkit-transition: filter 0.666s ease-in-out;
+    -moz-transition: filter 0.666s ease-in-out;
+    -o-transition: filter 0.666s ease-in-out;
+
 }
 
 .graphic-krk-container img{
@@ -189,36 +172,24 @@
 .graphic-krk-container:hover img,
 .graphic-primo-container:hover img,
 .graphic-zako-container:hover img {
-    filter:  brightness(0.7); /* Przywrócenie normalnych kolorów na hover */
+    filter: brightness(0.7);
 }
 
 .goto-btn,
 .reservation-btn,
-
 .graphic-text {
     position: absolute;
-    top: 241px;
-    width: 100%; /* Dodaj tę linię */
-    font-size: 58px;
-    text-align: center; /* Zmień na 'center' */
-    letter-spacing: 0px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -1.23px;
     color: #FFFFFF;
     opacity: 1;
     font-weight: normal;
-
+    font-size: 58px;
+    top: 320px;
 }
 
 
-.graphic-krk-container:hover .goto-btn,
-.graphic-krk-container:hover .reservation-btn,
-.graphic-krk-container:hover .graphic-text,
-.graphic-primo-container:hover .goto-btn,
-.graphic-primo-container:hover .reservation-btn,
-.graphic-primo-container:hover .graphic-text,
-.graphic-zako-container:hover .goto-btn,
-.graphic-zako-container:hover .reservation-btn
-.graphic-zako-container:hover .graphic-text{
-}
 
 .goto-btn {
     position: absolute;
@@ -238,92 +209,44 @@
     text-decoration: none;
     transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.2s ease-in-out;
     line-height: 70px;
-
-
+    -webkit-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    -o-transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .goto-btn:hover {
     transform: scale(1.1);
     border: #FFFFFF solid 7px;
     font-weight: bold;
-
-
 }
 
 
-
-
-.graphic-text {
-    position: absolute;
-    top: 290px;
-    width: 100%;
-    font-size: 58px;
-    text-align: center;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-}
 
 .reservation-btn {
-    position: absolute; /* Pozycjonowanie elementu względem najbliższego przodka o pozycjonowaniu innym niż statyczne (w tym przypadku .graphic-krk-container, .graphic-primo-container, .graphic-zako-container) */
-    top: 649px; /* Odległość od górnej krawędzi najbliższego przodka o pozycjonowaniu innym niż statyczne */
-    left: 109px; /* Odległość od lewej krawędzi najbliższego przodka o pozycjonowaniu innym niż statyczne */
-    width: 261px; /* Szerokość przycisku */
-    height: 80px; /* Wysokość przycisku */
-    background: #BDB69F 0% 0% no-repeat padding-box; /* Kolor tła przycisku, bez powtarzania obrazka, zastosowanie padding-box */
-    box-shadow: 0px 28px 62px #A39D8985; /* Cień dla przycisku, przesunięcie X: 0px, przesunięcie Y: 28px, rozmycie: 62px, kolor: #A39D8985 (85 oznacza 85% widoczności koloru) */
-    border-radius: 40px; /* Zaokrąglenie rogów przycisku */
-    opacity: 1; /* Przezroczystość przycisku, 1 oznacza całkowicie widoczny */
-    font-size: 33px; /* Rozmiar czcionki tekstu przycisku */
-    text-align: center; /* Wyśrodkowanie tekstu w poziomie */
-    color: #FFFFFF; /* Kolor tekstu przycisku */
-    letter-spacing: -0.75px; /* Odstęp między literami tekstu przycisku */
-    cursor: pointer; /* Ustawienie kursora myszy jako wskaźnika (ręka z wskazującym palcem) */
-    border: none; /* Usunięcie obramowania przycisku */
-    transition: color 0.3s ease-in-out, box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out; /* Dodanie płynnego przejścia dla przekształceń i cienia */
+    position: absolute;
+    top: 649px;
+    left: 109px;
+    width: 261px;
+    height: 80px;
+    background: #BDB69F 0% 0% no-repeat padding-box;
+    box-shadow: 0px 28px 62px #A39D8985;
+    border-radius: 40px;
+    opacity: 1;
+    font-size: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: -0.75px;
+    cursor: pointer;
+    border: none;
+    -webkit-transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    -moz-transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+
 }
 
 .reservation-btn:hover {
-    background: #BDB69F;
-    box-shadow: 0px 14px 31px #A39D8985; /* Zmniejszenie cienia */
-    transform: scale(1.1); /* Dodanie przekształcenia, które zmniejsza przycisk o 5% */
+    background-color: #A39D89;
+    transform: scale(1.1);
 }
 
-/* Dodaj te media queries na końcu global.css */
-
-@media (max-width: 767px) {
-    .main-container {
-        padding: 0;
-    }
-
-    .navbar-container {
-        flex-direction: row;
-    }
-
-    .graphics-container {
-        flex-direction: column;
-        top: 0;
-    }
-
-    .graphic-krk-container,
-    .graphic-primo-container,
-    .graphic-zako-container {
-        width: 100%;
-        height: auto;
-    }
-
-    .graphic-krk-container img,
-    .graphic-primo-container img,
-    .graphic-zako-container img {
-        height: auto;
-    }
-
-    .goto-btn,
-    .reservation-btn,
-    .graphic-text {
-        font-size: 30px;
-    }
-
-
-
-}

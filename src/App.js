@@ -1,4 +1,5 @@
 import React from 'react';
+import './reset.css'
 import './global.css';
 import Navbar from './components/Navbar';
 import GraphicKrk from './components/GraphicKrk';

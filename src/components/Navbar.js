@@ -31,7 +31,7 @@ const Navbar = () => {
             </div>
             <div className="slogan">
                 <h1>Magnificence.</h1>
-                <p>The world with <strong>CRUSOE</strong>. The greatest luxury is traveling and staying happy.</p>
+                <p>The world with <b><strong>CRUSOE</strong></b>. The greatest luxury is traveling and staying happy.</p>
             </div>
             {/* Reszta struktury navbara */}
         </div>
