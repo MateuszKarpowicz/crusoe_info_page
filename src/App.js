@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './global.css';
+import Navbar from './components/Navbar';
+import GraphicKrk from './components/GraphicKrk';
+import GraphicPrimo from './components/GraphicPrimo';
+import GraphicZako from './components/GraphicZako';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="main-container">
+                <div className="navbar-wrapper" style={{zIndex: 10}}>
+                <div className="navbar-container">
+                <Navbar />
+                </div>
+                </div>
+                <div className="graphics-container">
+                    <GraphicKrk />
+                    <GraphicPrimo />
+                    <GraphicZako />
+                </div>
+            </div>
+            {/* Reszta struktury strony */}
+        </div>
+    );
 }
 
 export default App;
