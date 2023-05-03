@@ -16,19 +16,23 @@ const Navbar = () => {
         <div className="navbar-container">
             <div className="top-smaller">
                 <img src={topSmaller} alt="Top Smaller" />
+                <div className="flags">
+                <div className="flag english" onClick={() => changeLanguage("EN")}>
+                <img src={englishFlag} alt="English Flag" />
             </div>
+            <div className="flag polish" onClick={() => changeLanguage("PL")}>
+                <img src={polishFlag} alt="Polish Flag" />
+            </div>
+            </div>
+            </div>
+            
             <div className="top-long">
                 <img src={topLong} alt="Top Long" />
             </div>
             <div className="logo">
                 <img src={logo} alt="Logo"/>
             </div>
-            <div className="flag english" onClick={() => changeLanguage("EN")}>
-                <img src={englishFlag} alt="English Flag" />
-            </div>
-            <div className="flag polish" onClick={() => changeLanguage("PL")}>
-                <img src={polishFlag} alt="Polish Flag" />
-            </div>
+            
             <div className="slogan">
                 <h1>Magnificence.</h1>
                 <p>The world with <b><strong>CRUSOE</strong></b>. The greatest luxury is traveling and staying happy.</p>

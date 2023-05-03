@@ -11,9 +11,7 @@ function App() {
         <div className="App">
             <div className="main-container">
                 <div className="navbar-wrapper" style={{zIndex: 10}}>
-                <div className="navbar-container">
                 <Navbar />
-                </div>
                 </div>
                 <div className="graphics-container">
                     <GraphicKrk />
