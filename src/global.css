@@ -54,10 +54,12 @@ body{
     background: transparent url('assets/Top-Smaller.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+
 .top-smaller img{
     width: 100vw;
     height: 60%;
 }
+
 .top-long {
     position: absolute;
     left: -100px;
@@ -105,7 +107,7 @@ body{
 
 .flag.english {
     top: 15%;
-    left: 90%;
+    left: 80em;
     width: 85px;
     height: 45px;
     mix-blend-mode: luminosity;
@@ -113,7 +115,7 @@ body{
 }
 .flag.polish {
     top: 15%;
-    left: 85em;
+    left: 75em;
     width: 85px;
     height: 45px;
     mix-blend-mode: luminosity;
@@ -157,7 +159,7 @@ body{
 }
 @media screen and (max-width: 600px) {
     .slogan p  {
-        font-size: 9px;
+        font-size: 6px;
       width:200px;
     }
   }
