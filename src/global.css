@@ -10,7 +10,6 @@
 body{
     display: flex;
     height: 100vh;
-    height: -webkit-fill-avaible;
     width: 100vw;
 }
 .main-container {
@@ -171,16 +170,18 @@ body{
     position: relative;
     top: -50px;
     z-index: 1;
+    margin-top: 130px;
 }
 @media screen and (max-width: 600px) {
     .graphics-container {
 flex-direction: column;
-height: 33vh;
+height: 30vh;
 }
 }
 .graphic-krk-container,
 .graphic-primo-container,
 .graphic-zako-container {
+
     display: flex;
     justify-content: center;
     position: relative;
@@ -192,12 +193,13 @@ height: 33vh;
     .graphic-krk-container,
 .graphic-primo-container,
 .graphic-zako-container {
-height: 33vh;
+height: 30vh;
 }
 }
 .graphic-krk-container img,
 .graphic-primo-container img,
 .graphic-zako-container img {
+    
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -207,12 +209,13 @@ height: 33vh;
     -moz-transition: filter 0.666s ease-in-out;
     -o-transition: filter 0.666s ease-in-out;
 }
-
-.graphic-krk-container img,
+@media screen and (max-width: 600px) {
+    .graphic-krk-container img,
 .graphic-primo-container img,
 .graphic-zako-container img {
-    margin-top: 130px;
-    height: 100vh;
+height: 30vh;
+filter: brightness(0.9);
+}
 }
 .graphic-krk-container:hover img,
 .graphic-primo-container:hover img,
@@ -235,7 +238,7 @@ height: 33vh;
 }
 @media screen and (max-width: 600px) {
     .graphic-text {
- font-size: 30px;
+ font-size: 20px;
  text-align: left;
  left:20%;
     }
@@ -263,12 +266,13 @@ height: 33vh;
 
 @media screen and (max-width: 600px) {
     .goto-btn  {
-        width: 120px;
-        height: 40px;
- font-size: 30px;
- top:29%;
- left:16%;
- line-height: 37px;
+        width: 60px;
+        height: 25px;
+ font-size: 15px;
+ top:20%;
+ left:21%;
+ line-height: 24px;
+ border: 2px solid;
     }
 }
 .goto-btn:hover {
@@ -302,12 +306,13 @@ height: 33vh;
 }
 @media screen and (max-width: 600px) {
     .reservation-btn {
-        width: 170px;
-        height: 50px;
- font-size: 30px;
- top:50%;
- left:13%;
- line-height: 37px;
+        width: 80px;
+        height: 30px;
+ font-size: 15px;
+ color: black;
+ top:65%;
+ left:20%;
+ line-height: 20px;
     }
 }
 
