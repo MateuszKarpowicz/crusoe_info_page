@@ -36,8 +36,8 @@ const Navbar = () => {
             <div className="slogan">
                 <h1>Magnificence.</h1>
                 <div className="paragraph-container">
-                <p className="p1">The world with CRUSOE.</p>
-                    <p className="p2">The greatest luxury is traveling and staying happy.</p>
+                <p className="p1">The world with <b className="slogan-crusoe">CRUSOE</b>.  </p>
+                    <p className="p2"> The greatest luxury is traveling and staying happy.</p>
             </div>
             </div>
             {/* Reszta struktury navbara */}
