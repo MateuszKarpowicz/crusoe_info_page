@@ -107,8 +107,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    z-index: 5;
+    width: 14vw;
+    min-width: 10vw;
 
 }
 
@@ -129,6 +129,7 @@ body{
     overflow: hidden;
     filter: grayscale(100%);
     opacity: 1;
+    z-index: 3;
 }
 
 
@@ -145,7 +146,8 @@ body{
     overflow: hidden;
     filter: grayscale(100%);
     opacity: 1;
-    transition: grayscale 0.5s ease-in-out;
+    z-index: 3;
+    margin-right: 3vw;
 }
 
 .flag-english img,
@@ -160,6 +162,31 @@ body{
     filter: grayscale(0%);
 }
 
+@media screen and (max-width: 1000px) {
+    .flag-english,
+    .flag-polish {
+        width: 50px;
+        height: 25px;
+    }
+    .flag-polish{
+        margin-right: 4vw;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+
+    .flag-polish{
+        margin-right: 10vw;
+    }
+  }
+
+
+@media screen and (max-width: 400px) {
+
+    .flag-polish{
+        margin-right: 15vw;
+    }
+}
 
 
 .slogan {
@@ -179,9 +206,14 @@ body{
     opacity: 1;
     margin: 0;
 }
+@media screen and (max-width: 1000px) {
+    .slogan  {
+    margin-top: 3px    }
+  }
+
 @media screen and (max-width: 600px) {
-    .slogan h1  {
-      font-size: 40px;
+    .slogan  {
+      left: 2em;
     }
   }
 
@@ -191,9 +223,27 @@ body{
     letter-spacing: -0px;
     color: #D1D2D2;
     opacity: 1;
-    margin: 0;
     white-space: nowrap;
-    margin-top:0px;
+}
+
+.paragraph-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+    .paragraph-container {
+        flex-direction: column;
+    }
+
+    .slogan .p1 {
+        margin-top: -3px;
+    }
+    .slogan .p2 {
+    margin-top: -5px;
+
+    }
+
 }
 @media screen and (max-width: 600px) {
     .slogan p  {
@@ -201,6 +251,10 @@ body{
       width:200px;
     }
   }
+
+
+
+
 .graphics-container {
     display: flex;
     justify-content: space-between;
@@ -267,7 +321,6 @@ filter: brightness(0.9);
 .reservation-btn,
 .graphic-text {
     position: absolute;
-    width: 100%;
     text-align: center;
     letter-spacing: -1.23px;
     color: #FFFFFF;
@@ -276,11 +329,11 @@ filter: brightness(0.9);
     font-size: 58px;
     top: 40%;
 }
+
 @media screen and (max-width: 600px) {
     .graphic-text {
  font-size: 20px;
  text-align: left;
- left:20%;
     }
 }
 .goto-btn {
@@ -310,7 +363,6 @@ filter: brightness(0.9);
         height: 25px;
  font-size: 15px;
  top:20%;
- left:21%;
  line-height: 24px;
  border: 2px solid;
     }
@@ -351,7 +403,6 @@ filter: brightness(0.9);
  font-size: 15px;
  color: black;
  top:65%;
- left:20%;
  line-height: 20px;
     }
 }
