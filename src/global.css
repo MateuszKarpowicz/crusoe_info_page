@@ -70,7 +70,6 @@ body{
     position: absolute;
     left: -60px;
     top: -25px;
-    width: 100%;
     height: 144px;
     opacity: 1;
     z-index: 1;
@@ -109,7 +108,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 200px;
-    border: chartreuse 1px solid;
+    z-index: 5;
 
 }
 
@@ -146,6 +145,7 @@ body{
     overflow: hidden;
     filter: grayscale(100%);
     opacity: 1;
+    transition: grayscale 0.5s ease-in-out;
 }
 
 .flag-english img,
@@ -193,7 +193,7 @@ body{
     opacity: 1;
     margin: 0;
     white-space: nowrap;
-    margin-top: 5px;
+    margin-top:0px;
 }
 @media screen and (max-width: 600px) {
     .slogan p  {
