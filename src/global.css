@@ -35,8 +35,6 @@ body{
     width: 100%;
     margin: 0;
     height: 100px;
-
-
     top: 0;
     right: 0;
     left: 0;
@@ -64,7 +62,6 @@ body{
     width: 100%;
     height: 80px;
     background: #808080;
-    opacity: 1;
     z-index: 0;
 }
 
@@ -93,56 +90,77 @@ body{
     opacity: 1;
     z-index: 2;
 }
+
+
+
 @media screen and (max-width: 600px) {
     .logo  {
         top:13px
     }
   }
-.flags{
+
+
+.flags-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    right: 0;
     width: 200px;
-    height: 100%;
-    top: 0;
-    z-index: 2;
-    border: chartreuse 0px solid;
-}
-.flag {
-    border: none;
-    cursor: pointer;
-    box-sizing: border-box;
-    z-index: 2;
-    filter: grayscale(100%);
+    border: chartreuse 1px solid;
+
 }
 
-.flag:last-child {
-    margin-right: 0;
-}
-
-.flag img {
+.flag-wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flag-english{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 45px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100%);
+    opacity: 1;
+}
+
+
+
+
+.flag-polish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 45px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100%);
+    opacity: 1;
+}
+
+.flag-english img,
+.flag-polish img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.flag.english {
-    width: 85px;
-    height: 45px;
-    opacity: 1;
-}
-.flag.polish {
-    width: 85px;
-    height: 45px;
-    opacity: 1;
-}
-
-.flag:hover {
+.flag-english:hover,
+.flag-polish:hover {
     filter: grayscale(0%);
 }
+
+
 
 .slogan {
     margin-top: 8px;
@@ -342,3 +360,6 @@ filter: brightness(0.9);
     background-color: #A39D89;
     transform: scale(1.1);
 }
+/* Skalowanie dla szerokości ekranu mniejszych niż 1440px */
+
+

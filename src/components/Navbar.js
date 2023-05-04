@@ -14,13 +14,15 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
             <div className="top-stripe">
-                <div className="flags">
-                <div className="flag english" onClick={() => changeLanguage("EN")}>
-                <img src={englishFlag} alt="English Flag" />
-            </div>
-            <div className="flag polish" onClick={() => changeLanguage("PL")}>
-                <img src={polishFlag} alt="Polish Flag" />
-            </div>
+                <div className="flags-container">
+                    <div className="flag-wrapper">
+                    <div className="flag-english" onClick={() => changeLanguage("EN")}>
+                        <img src={englishFlag} alt="English Flag"  />
+                    </div>
+                    <div className="flag-polish" onClick={() => changeLanguage("PL")}>
+                        <img src={polishFlag} alt="Polski Flag" />
+                    </div>
+                    </div>
             </div>
             </div>
             
