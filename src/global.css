@@ -1,6 +1,4 @@
-
-
-
+/* FONTY */
 @font-face {
     font-family: 'Nineteenth';
     src: url('fonts/Nineteenth.woff2') format('woff2'),
@@ -14,11 +12,13 @@
     font-style: normal;
 }
 
-body{
+body {
     display: flex;
     height: 100vh;
     width: 100vw;
 }
+
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -32,144 +32,251 @@ body{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
-
     position: relative;
 }
 
 .navbar-wrapper {
     position: absolute;
+    /* Ustawia pozycję na 'absolute' */
     width: 100%;
+    /* Szerokość elementu na 100% szerokości rodzica */
     margin: 0;
+    /* Ustawia zewnętrzne odstępy na 0 */
     height: 100px;
+    /* Wysokość elementu na 100px */
     top: 0;
+    /* Pozycja od górnego brzegu rodzica */
     right: 0;
+    /* Pozycja od prawego brzegu rodzica */
     left: 0;
+    /* Pozycja od lewego brzegu rodzica */
     display: flex;
+    /* Ustawia model wyświetlania na 'flex' */
     justify-content: center;
+    /* Wyrównuje elementy wzdłuż głównej osi */
     align-items: center;
+    /* Wyrównuje elementy wzdłuż osi prostopadłej do głównej osi */
 }
 
 .navbar-container {
     display: flex;
+    /* Ustawia model wyświetlania na 'flex' */
     flex-direction: column;
+    /* Ustawia główny kierunek flex na 'kolumnę' */
     align-items: flex-start;
+    /* Wyrównuje elementy wzdłuż osi prostopadłej do głównej osi */
     justify-content: flex-end;
+    /* Wyrównuje elementy wzdłuż głównej osi na dole */
     width: 100%;
+    /* Szerokość elementu na 100% szerokości rodzica */
     height: 100%;
+    /* Wysokość elementu na 100% wysokości rodzica */
     position: relative;
+    /* Ustawia pozycję na 'relative', aby umożliwić pozycjonowanie absolutne elementów potomnych */
     padding-left: 0;
+    /* Ustawia wewnętrzne odstępy po lewej stronie na 0 */
 }
 
 .top-stripe {
     position: absolute;
+    /* Ustawia pozycję na 'absolute' */
     top: 0;
+    /* Pozycja od górnego brzegu rodzica */
     left: 0;
+    /* Pozycja od lewego brzegu rodzica */
     right: 0;
+    /* Pozycja od prawego brzegu rodzica */
     width: 100%;
+    /* Szerokość elementu na 100% szerokości rodzica */
     height: 80px;
-    background: #808080;
-    z-index: 0;
+    /* Wysokość elementu na 80px */
+    background: #000000;
+    /* Ustawia kolor tła na czarny */
+    z-index: 2;
+    /* Ustawia indeks kolejności stosowania na 2 */
 }
 
+.top-stripe-texture {
+    position: absolute;
+    /* Ustawia pozycję na 'absolute' */
+    top: 0;
+    /* Pozycja od górnego brzegu rodzica */
+    right: 0;
+    /* Pozycja od prawego brzegu rodzica */
+    left: 0;
+    /* Pozycja od lewego brzegu rodzica */
+    width: 500px;
+    /* Szerokość elementu na 500px */
+    height: 100%;
+    /* Wysokość elementu na 100% wysokości rodzica */
+    z-index: 3;
+    /* Ustawia indeks kolejności stosowania na 3 */
+}
 
+.top-stripe-texture img {
+    position: absolute;
+    /* Ustawia pozycję na 'absolute' */
+    top: -10px;
+    /* Pozycja od górnego brzegu rodzica */
+    width: 100%;
+    /* Szerokość elementu na 100% szerokości rodzica */
+    object-fit: scale-down;
+    /* Dopasowuje obiekt do elementu, skalując go w dół */
+    object-position: top;
+    /* Ustawia pozycję obiektu na górze elementu */
+    height: 150px;
+    /* Wysokość elementu na 150px */
+    left: 0;
+    /* Pozycja od lewego brzegu rodzica */
+    scale: 1.2;
+    /* Skaluje obiekt o współczynnik 1.2 */
+}
 
 .top-long {
     position: absolute;
-    left: -60px;
-    top: -25px;
+    /* Ustawia pozycję na 'absolute' */
+    left: -40px;
+    /* Pozycja od lewego brzegu rodzica */
+    top: -27px;
+    /* Pozycja od górnego brzegu rodzica */
     height: 144px;
+    /* Wysokość elementu na 144px */
     opacity: 1;
-    z-index: 1;
-}
-
-
-
-
-.top-long img{
-    width:90vw;
-    height:100%;
+    /* Ustawia wartość krycia na 1 (pełna widoczność) */
     z-index: 2;
+    /* Ustawia indeks kolejności stosowania na 2 */
 }
+
+.top-long img {
+    height: 100%;
+    /* Wysokość elementu na 100% wysokości rodzica */
+    z-index: 2;
+    /* Ustawia indeks kolejności stosowania na 2 */
+}
+
 .logo {
     position: absolute;
+    /* Ustawia pozycję na 'absolute' */
     top: 8px;
-    left: 10px;
-    width: 63px;
-    height: 78px;
+    /* Pozycja od górnego brzegu rodzica */
+    left: 15px;
+    /* Pozycja od lewego brzegu rodzica */
+    width: 56px;
+    /* Szerokość elementu na 56px */
+    height: 70px;
+    /* Wysokość elementu na 70px */
     opacity: 1;
+    /* Ustawia wartość krycia na 1 (pełna widoczność) */
     z-index: 2;
+    /* Ustawia indeks kolejności stosowania na 2 */
 }
 
 .logo img {
     width: 100%;
+    /* Szerokość elementu na 100% szerokości rodzica */
     height: 100%;
+    /* Wysokość elementu na 100% wysokości rodzica */
     object-fit: cover;
+    /* Dopasowuje obiekt do elementu, zachowując proporcje obiektu */
 }
-
-
 
 .flags-container {
     position: absolute;
+    /* Ustawia pozycję na 'absolute' */
     top: 0;
+    /* Pozycja od górnego brzegu rodzica */
     right: 0;
+    /* Pozycja od prawego brzegu rodzica */
     bottom: 0;
+    /* Pozycja od dolnego brzegu rodzica */
     display: flex;
+    /* Ustawia rodzaj wyświetlania na 'flex' */
     justify-content: center;
+    /* Wyrównuje elementy wewnątrz kontenera na środku */
     align-items: center;
+    /* Wyrównuje elementy wewnątrz kontenera w pionie */
     width: 14vw;
+    /* Szerokość elementu na 14% szerokości widoku */
     min-width: 10vw;
-
+    /* Minimalna szerokość elementu na 10% szerokości widoku */
 }
 
 .flag-wrapper {
     display: flex;
+    /* Ustawia rodzaj wyświetlania na 'flex' */
     justify-content: space-between;
+    /* Rozkłada elementy równomiernie, z odstępami między nimi */
     align-items: center;
+    /* Wyrównuje elementy wewnątrz kontenera w pionie */
 }
 
-.flag-english{
+.flag-english {
     display: flex;
+    /* Ustawia rodzaj wyświetlania na 'flex' */
     align-items: center;
+    /* Wyrównuje elementy wewnątrz kontenera w pionie */
     justify-content: center;
+    /* Wyrównuje elementy wewnątrz kontenera na środku */
     width: 85px;
+    /* Szerokość elementu na 85px */
     height: 45px;
+    /* Wysokość elementu na 45px */
     cursor: pointer;
+    /* Zmienia kursor na wskaźnik */
     position: relative;
+    /* Ustawia pozycję na 'relative' */
     overflow: hidden;
+    /* Ukrywa zawartość wystającą poza granice elementu */
     filter: grayscale(100%);
+    /* Konwertuje kolor na odcienie szarości */
     opacity: 1;
+    /* Ustawia wartość krycia na 1 (pełna widoczność) */
     z-index: 3;
+    /* Ustawia indeks kolejności stosowania na 3 */
 }
-
-
 
 
 .flag-polish {
     display: flex;
+    /* Ustawia rodzaj wyświetlania na 'flex' */
     align-items: center;
+    /* Wyrównuje elementy wewnątrz kontenera w pionie */
     justify-content: center;
+    /* Wyrównuje elementy wewnątrz kontenera na środku */
     width: 85px;
+    /* Szerokość elementu na 85px */
     height: 45px;
+    /* Wysokość elementu na 45px */
     cursor: pointer;
+    /* Zmienia kursor na wskaźnik */
     position: relative;
+    /* Ustawia pozycję na 'relative' */
     overflow: hidden;
+    /* Ukrywa zawartość wystającą poza granice elementu */
     filter: grayscale(100%);
+    /* Konwertuje kolor na odcienie szarości */
     opacity: 1;
+    /* Ustawia wartość krycia na 1 (pełna widoczność) */
     z-index: 3;
+    /* Ustawia indeks kolejności stosowania na 3 */
     margin-right: 3vw;
+    /* Ustawia margines po prawej stronie na 3% szerokości widoku */
 }
 
 .flag-english img,
 .flag-polish img {
     width: 100%;
+    /* Szerokość elementu na 100% szerokości rodzica */
     height: 100%;
+    /* Wysokość elementu na 100% wysokości rodzica */
     object-fit: cover;
+    /* Dopasowuje obiekt do elementu, zachowując proporcje obiektu */
 }
 
 .flag-english:hover,
 .flag-polish:hover {
     filter: grayscale(0%);
+    /* Usuwa konwersję na odcienie szarości podczas najechania myszką */
 }
 
 
@@ -208,8 +315,6 @@ body{
 
 .slogan-crusoe {
     font-family: Outfit-Regular, sans-serif;
-    font-weight: 700 !important;
-
 }
 
 .paragraph-container {
@@ -219,34 +324,28 @@ body{
 
 
 
-
-
-
 .graphics-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+
+}
+.graphic-container-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    opacity: 1;
+    width: 100%;
+}
+
+.graphic-container-item img {
     width: 100%;
     height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 80px;
-    bottom: 0;
-}
-
-.graphic-container-item {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    opacity: 1;
-}
-
-.graphic-container-item img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    object-fit: fill;
     filter: brightness(0.2);
     transition: filter 0.666s ease-in-out;
     -webkit-transition: filter 0.666s ease-in-out;
@@ -258,78 +357,6 @@ body{
     filter: brightness(0.7);
 }
 
-/*
-
-.graphics-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    top: -50px;
-    z-index: 1;
-    margin-top: 130px;
-}
-
-.graphic-container-item {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    opacity: 1;
-}
-
-.graphic-container-item img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    filter: brightness(0.2);
-    transition: filter 0.666s ease-in-out;
-    -webkit-transition: filter 0.666s ease-in-out;
-    -moz-transition: filter 0.666s ease-in-out;
-    -o-transition: filter 0.666s ease-in-out;
-}
-
-.graphic-container-item:hover img {
-    filter: brightness(0.7);
-}
-
-/*
-
-/*
-.graphic-krk-container,
-.graphic-primo-container,
-.graphic-zako-container {
-
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    opacity: 1;
-}
-
-.graphic-krk-container img,
-.graphic-primo-container img,
-.graphic-zako-container img {
-
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    filter: brightness(0.2);
-    transition: filter 0.666s ease-in-out;
-    -webkit-transition: filter 0.666s ease-in-out;
-    -moz-transition: filter 0.666s ease-in-out;
-    -o-transition: filter 0.666s ease-in-out;
-}
-
-.graphic-krk-container:hover img,
-.graphic-primo-container:hover img,
-.graphic-zako-container:hover img {
-    filter: brightness(0.7);
-}*/
 
 .graphic-content {
     display: flex;
@@ -407,115 +434,65 @@ body{
 .reservation-btn:hover {
     background-color: #A39D89;
     transform: scale(1.1);
+    top: 30px
 }
 
 
 
-@media (max-width: 1000px) {
-    .paragraph-container {
-        flex-direction: column;
-    }
-
-    .slogan .p1 {
-        margin-top: -3px;
-    }
-
-    .slogan .p2 {
-        margin-top: -5px;
-
-    }
+.footer-wrapper {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 80px;
+    z-index: 5;
+    display: none;
 }
 
-@media (max-width: 732px) {
-    .main-container {
-        min-height: 100vh;
-        align-items: stretch;
-    }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: black;
+    z-index: 5;
 }
 
 
 
-@media screen and (max-width: 732px) {
-    .top-stripe  {
-        height: 60px;
-    }
-}
 
-@media screen and (max-width: 732px) {
-    .top-long  {
-        top: -45px;
-    }
-}
 
-@media screen and (max-width: 732px) {
-    .logo  {
-        width: 50px;
-        height: 62px;
-    }
-}
 
-@media screen and (max-width: 1000px) {
-    .flag-english,
-    .flag-polish {
-        width: 50px;
-        height: 25px;
-    }
-    .flag-polish{
-        margin-right: 4vw;
-    }
-}
+@media screen and (max-width: 1000px)
 
-@media screen and (max-width: 732px) {
+
+{
+    .footer-wrapper {
+        display: flex;
+    }
+
+    .flag-polish,
+    .flag-english {
+        width: 38px;
+        height: 20px;
+    }
 
     .flag-polish{
         margin-right: 10vw;
     }
-}
-
-
-@media screen and (max-width: 400px) {
-
-    .flag-polish{
-        margin-right: 15vw;
-    }
-}
-@media screen and (max-width: 1000px) {
-    .slogan  {
-        margin-top: 3px    }
-}
-
-@media screen and (max-width: 732px) {
-    .slogan  {
-        left: 2em;
-    }
-}
-
-
-@media screen and (max-width: 732px) {
-    /* Dodaj te style */
     .graphic-disabled .graphic-content {
         display: none;
         opacity: 0;
-        transition: opacity 2s ease-in-out;
     }
     .graphic-enabled .graphic-overlay {
         display: none;
         opacity: 0;
-        transition: opacity 2s ease-in-out;
     }
 
-    .graphic-enabled .graphic-content {
-        opacity: 1;
-        transition: opacity 2s ease-in-out;
-    }
-    .graphic-disabled .graphic-overlay {
-        opacity: 1;
-        transition: opacity 2s ease-in-out;
-    }
     .graphic-enabled .graphic-container-item:hover img {
         filter: brightness(0.5);
     }
-
 
     .graphic-overlay {
         position: absolute;
@@ -524,70 +501,48 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 35px;
+        font-size: 25px;
         z-index: 20;
         color: #FFFFFF;
     }
-
-}
-
-
-@media screen and (max-width: 732px) {
-    .slogan p  {
-        margin-left: 20px;
-        font-size: 8px;
-        margin-top: 10px;
-        width:200px;
+    .overlay-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
-    .slogan h1 {
-        margin-top: 10px;
-        margin-left: 20px;
-        font-size: 20px;
+    .go-to-overlay {
+        font-size: 15px;
+    }
+    .graphic-overlay .overlay-content h2.extra-margin span {
+        margin-right: 30px; /* Dodaj margines po prawej stronie, aby uzyskać dodatkowe puste miejsce */
+    }
 
-    }
-    .slogan {
-        margin-left: 20px;
-    }
-    .slogan .p1 {
-        margin-top: 5px;
-    }
-    .slogan .p2 {
-        margin-top: 5px;
-    }}
-
-@media screen and (max-width: 732px) {
     .graphics-container {
         flex-direction: column;
-        height: 30vh;
-        top: 60px;
+        width: 100%;
+        height: calc(100vh - 140px);
+        margin-top: 60px;
+        margin-bottom: 80px;
     }
-}
 
-@media screen and (max-width: 732px) {
     .graphic-container-item {
-        height: 30vh;
+        height: calc(100%/3);
     }
-}
 
 
-@media screen and (max-width: 732px) {
     .graphic-container-item img {
-        height: 30vh;
+        width: 100%;
 
     }
 
-}
-@media screen and (max-width: 732px) {
     .graphic-content {
         left:-25%;
     }
-}
-@media screen and (max-width: 732px) {
+
     .graphic-text {
         font-size: 20px;
     }
-}
-@media screen and (max-width: 732px) {
+
     .goto-btn  {
         width: 60px;
         height: 25px;
@@ -595,8 +550,7 @@ body{
         line-height: 24px;
         border: 3px solid;
     }
-}
-@media screen and (max-width: 732px) {
+
     .reservation-btn {
         width: 80px;
         height: 30px;
@@ -604,5 +558,40 @@ body{
         color: black;
         line-height: 20px;
     }
-}
+
+    .top-stripe {
+        height: 60px;
+    }
+    .top-stripe-texture {
+        height: 60px;
+        width: 480px;
+        scale: 1;
+        top: -10px;
+    }
+
+
+
+
+    .top-long {
+        position: absolute;
+        left: -40px;
+        top: -40px;
+
+    }
+
+    .logo {
+        position: absolute;
+        width: 48px;
+        height: 60px;
+
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }}
+
+
+
+
 

@@ -9,7 +9,10 @@ const Footer = () => {
     return (
         <div className="footer-wrapper">
             <div className="footer-container">
+
                 <div className="footer-content">
+                    <div className="footer-social-block">
+                    </div>
                 </div>
             </div>
         </div>

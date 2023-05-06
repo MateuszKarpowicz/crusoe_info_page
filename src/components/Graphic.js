@@ -5,11 +5,12 @@ import GraphicContext from "./GraphicContext";
 const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName }) => {
     const containerRef = React.useRef(null);
     const { activeGraphic, setActiveGraphic } = React.useContext(GraphicContext);
+    const [displayedLocationName, setDisplayedLocationName] = React.useState(locationName);
     const isActive = activeGraphic === graphicId;
 
     const handleTouch = () => {
         setActiveGraphic(graphicId);
-        containerRef.current.style.display = "flex";
+        setDisplayedLocationName(locationName);
     };
 
     React.useEffect(() => {
@@ -22,10 +23,10 @@ const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName }) => {
                 containerRef.current.removeEventListener("touchstart", handleTouch);
             }
         };
-    }, []);
+    }, [locationName]);
 
     return (
-        <div ref={containerRef} className={`graphic-container-item ${!isActive ? 'graphic-disabled' : ''}`} onClick={() => setActiveGraphic(graphicId)}>
+        <div ref={containerRef} className={`graphic-container-item ${!isActive ? 'graphic-disabled' : 'graphic-enabled'}`} onClick={() => setActiveGraphic(graphicId)}>
             <img src={imageSrc} alt={altText} />
             <div className='graphic-content'>
                 <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="goto-btn">Go to</a>
@@ -34,8 +35,12 @@ const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName }) => {
             </div>
             {!isActive &&
                 <div className="graphic-overlay">
-                        <h2>{locationName}</h2>
-                </div>}
+                    <div className="overlay-content">
+                        <h2 className="go-to-overlay">Go to</h2>
+                        <h2 className={locationName === "Kraków" ? "extra-margin" : ""}><span>{displayedLocationName}</span></h2>
+                    </div>
+                </div>
+            }
         </div>
     );
 }
