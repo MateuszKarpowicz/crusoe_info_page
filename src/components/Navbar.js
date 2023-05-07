@@ -19,7 +19,6 @@ const Navbar = () => {
                 <div className="top-stripe-texture">
                     <img src={topStripeTexture} alt="Top Stripe Texture" />
                 </div>
-
                 <div className="flags-container">
                     <div className="flag-english" onClick={() => changeLanguage("EN")}>
                         <img src={englishFlag} alt="English Flag"  />
@@ -27,17 +26,14 @@ const Navbar = () => {
                     <div className="flag-polish" onClick={() => changeLanguage("PL")}>
                         <img src={polishFlag} alt="Polski Flag" />
                     </div>
+                </div>
             </div>
-            </div>
-
-
-            <div className="top-long">
-                <img src={topLong} alt="Top Long" />
-            </div>
+                <div className="top-long">
+                    <img src={topLong} alt="Top Long" />
+                </div>
             <div className="logo">
                 <img src={logo} alt="Logo"/>
             </div>
-
         </div>
         </div>
     );

@@ -3,9 +3,9 @@ import { useState } from 'react';
 import './reset.css'
 import './global.css';
 import Navbar from './components/Navbar';
-import Krakow from './components/Krakow';
-import Primosten from './components/Primosten';
-import Zakopane from './components/Zakopane';
+import KrakowCard from './components/KrakowCard';
+import PrimostenCard from './components/PrimostenCard';
+import ZakopaneCard from './components/ZakopaneCard';
 import GraphicContext from './components/GraphicContext';
 import Footer from "./components/Footer";
 
@@ -18,9 +18,9 @@ function App() {
                 <Navbar />
                 <div className="graphics-container">
                 <GraphicContext.Provider value={{ activeGraphic, setActiveGraphic }}>
-                    <Krakow />
-                    <Zakopane />
-                    <Primosten />
+                    <KrakowCard />
+                    <ZakopaneCard />
+                    <PrimostenCard />
                 </GraphicContext.Provider>
                 </div>
                 <Footer />

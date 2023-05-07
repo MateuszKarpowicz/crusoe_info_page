@@ -1,4 +1,4 @@
-/* FONTY */
+
 @font-face {
     font-family: 'Nineteenth';
     src: url('fonts/Nineteenth.woff2') format('woff2'),
@@ -17,7 +17,6 @@ body {
     height: 100vh;
     width: 100vw;
 }
-
 
 .main-container {
     display: flex;
@@ -57,6 +56,22 @@ body {
     height: 100%;
     position: relative;
     padding-left: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    width: 56px;
+    height: 70px;
+    opacity: 1;
+    z-index: 2;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .top-stripe {
@@ -105,22 +120,6 @@ body {
     z-index: 2;
 }
 
-.logo {
-    position: absolute;
-    top: 8px;
-    left: 15px;
-    width: 56px;
-    height: 70px;
-    opacity: 1;
-    z-index: 2;
-}
-
-.logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .flags-container {
     position: absolute;
     top: 0;
@@ -133,11 +132,6 @@ body {
     align-items: center;
 }
 
-
-
-
-
-
 .flag-polish,
 .flag-english   {
     width: 62px;
@@ -147,15 +141,11 @@ body {
     filter: grayscale(100%);
     opacity: 1;
     z-index: 3;
-
-
-
-
 }
+
 .flag-polish{
     margin-right: 25px;
 }
-
 
 .flag-english img,
 .flag-polish img {
@@ -167,11 +157,7 @@ body {
 .flag-english:hover,
 .flag-polish:hover {
     filter: grayscale(0%);
-    /* Usuwa konwersję na odcienie szarości podczas najechania myszką */
 }
-
-
-
 
 .graphics-container {
     display: flex;
@@ -182,6 +168,7 @@ body {
     width: 100%;
 
 }
+
 .graphic-container-item {
     flex: 1;
     display: flex;
@@ -206,7 +193,6 @@ body {
 .graphic-container-item:hover img {
     filter: brightness(0.7);
 }
-
 
 .graphic-content {
     display: flex;
@@ -247,8 +233,6 @@ body {
      margin-bottom: 10px;
 }
 
-
-
 .goto-btn:hover {
     transform: scale(1.1);
     border: #FFFFFF solid 7px;
@@ -260,9 +244,8 @@ position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    top: calc(23% + 70px + 10px); /* Względne położenie od .goto-btn z dodatkowym odstępem */
+    top: calc(23% + 70px + 10px);
 }
-
 
 .reservation-btn {
     position: absolute;
@@ -283,17 +266,12 @@ position: absolute;
     -moz-transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
     -o-transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-
 }
-
 
 .reservation-btn:hover {
     background-color: #A39D89;
     transform: scale(1.1);
-    top: 30px
 }
-
-
 
 .footer-wrapper {
     bottom: 0;
@@ -337,6 +315,7 @@ footer-right-graphic img {
     left: 110px;
     z-index: 6;
 }
+
 .slogan-footer-txt-mid {
     z-index: 6;
     color: #FFFFFF;
@@ -348,8 +327,6 @@ footer-right-graphic img {
     font-size: 8px;
     font-weight: bold;
     font-family: Outfit-Regular, sans-serif;
-
-
 }
 
 .slogan-footer-txt-down {
@@ -366,12 +343,12 @@ footer-right-graphic img {
     color: #8C6037;
 }
 
-
 .graphic-overlay {
     color: #FFFFFF;
     display: none;
 
 }
+
 .footer-social-block {
     bottom: 0px;
     left: 0;
@@ -382,13 +359,17 @@ footer-right-graphic img {
     display: flex;
 
 }
+
 .footer-social-svg {
     width: 78px;
     height: 78px;
 }
+
+
+
+
+
 @media screen and (max-width: 1000px)
-
-
 {
     .footer-wrapper {
         display: flex;
@@ -436,9 +417,8 @@ footer-right-graphic img {
         font-size: 15px;
     }
     .graphic-overlay .overlay-content h2.extra-margin span {
-        margin-right: 30px; /* Dodaj margines po prawej stronie, aby uzyskać dodatkowe puste miejsce */
+        margin-right: 30px;
     }
-
     .graphics-container {
         flex-direction: column;
         width: 100%;
@@ -446,24 +426,18 @@ footer-right-graphic img {
         margin-top: 60px;
         margin-bottom: 100px;
     }
-
     .graphic-container-item {
         height: calc(100%/3);
     }
-
-
     .graphic-container-item img {
         width: 100%;
 
     }
-
     .graphic-content {
         left:-25%;
         opacity: 0;
         transition: opacity 0.666s ease-in-out;
-
     }
-
     .graphic-text {
         font-size: 20px;
         top: calc(30% + 25px);
@@ -475,7 +449,6 @@ footer-right-graphic img {
         line-height: 24px;
         border: 3px solid;
     }
-
     .reservation-btn {
         width: 80px;
         height: 30px;
@@ -483,7 +456,6 @@ footer-right-graphic img {
         color: black;
         line-height: 20px;
     }
-
     .top-stripe {
         height: 60px;
     }
@@ -493,29 +465,22 @@ footer-right-graphic img {
         scale: 1;
         top: -10px;
     }
-
-
-
-
     .top-long {
         position: absolute;
         left: -40px;
         top: -40px;
-
     }
-
     .logo {
         position: absolute;
         width: 42px;
         height: 55px;
         left: 10px;
-
     }
-
     .logo img {
         width: 100%;
         height: 100%;
-    }}
+    }
+}
 
 
 

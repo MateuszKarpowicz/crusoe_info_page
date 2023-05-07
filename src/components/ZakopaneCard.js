@@ -2,16 +2,16 @@ import React from 'react';
 import graphicZakoImage from '../assets/Zakopane.jpg';
 import Graphic from './Graphic';
 
-const Zakopane = () => {
+const ZakopaneCard = () => {
     return (
         <Graphic
             graphicId="graphicZako"
             imageSrc={graphicZakoImage}
             altText="Graphic Zako"
             linkUrl="https://apartamenty-krakow.crusoe.info"
-            locationName="Zakopane"
+            locationName="ZakopaneCard"
         />
     );
 }
 
-export default Zakopane;
+export default ZakopaneCard;
