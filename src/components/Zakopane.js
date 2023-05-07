@@ -2,7 +2,7 @@ import React from 'react';
 import graphicZakoImage from '../assets/Zakopane.jpg';
 import Graphic from './Graphic';
 
-const GraphicZako = () => {
+const Zakopane = () => {
     return (
         <Graphic
             graphicId="graphicZako"
@@ -14,4 +14,4 @@ const GraphicZako = () => {
     );
 }
 
-export default GraphicZako;
+export default Zakopane;

@@ -21,13 +21,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="flags-container">
-                    <div className="flag-wrapper">
                     <div className="flag-english" onClick={() => changeLanguage("EN")}>
                         <img src={englishFlag} alt="English Flag"  />
                     </div>
                     <div className="flag-polish" onClick={() => changeLanguage("PL")}>
                         <img src={polishFlag} alt="Polski Flag" />
-                    </div>
                     </div>
             </div>
             </div>
@@ -40,7 +38,6 @@ const Navbar = () => {
                 <img src={logo} alt="Logo"/>
             </div>
 
-            {/* Reszta struktury navbara */}
         </div>
         </div>
     );

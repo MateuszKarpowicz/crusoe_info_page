@@ -2,7 +2,7 @@ import React from 'react';
 import graphicKrkImage from '../assets/KR.png';
 import Graphic from './Graphic';
 
-const GraphicKrk = () => {
+const Krakow = () => {
     return (
         <Graphic
             graphicId="graphicKrk"
@@ -14,4 +14,4 @@ const GraphicKrk = () => {
     );
 }
 
-export default GraphicKrk;
+export default Krakow;

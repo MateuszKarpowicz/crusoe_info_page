@@ -2,7 +2,7 @@ import React from 'react';
 import graphicPrimoImage from '../assets/Primosten.jpg';
 import Graphic from './Graphic';
 
-const GraphicPrimo = () => {
+const Primosten = () => {
     return (
         <Graphic
             graphicId="graphicPrimo"
@@ -14,4 +14,4 @@ const GraphicPrimo = () => {
     );
 }
 
-export default GraphicPrimo;
+export default Primosten;
