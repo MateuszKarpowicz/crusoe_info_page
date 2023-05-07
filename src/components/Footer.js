@@ -1,23 +1,23 @@
 import React from 'react';
 import '../reset.css'
 import '../global.css';
-import SocialBlock from '../assets/SocialBlock.svg';
-import { ReactSVG } from 'react-svg';
-import FooterRightGraphic from '../assets/footer-right-graphic.png';
+import SocialBlock from './SocialBlock.js';
+import footerBackGround from '../assets/footer/footer-background.png';
+import footerBottomRight from '../assets/footer/footer-bottom-right.png';
 
 
 
 const Footer = () => {
-
     return (
         <div className="footer-wrapper">
             <div className="footer-container">
-                <div className="footer-social-block">
-                    <ReactSVG className="footer-social-svg" src={SocialBlock} />
+                <div className="footer-background">
+                    <img className="footer-background-img" src={footerBackGround} alt="footer-background" />
                 </div>
+                <SocialBlock />
             </div>
-            <div className="footer-right-graphic">
-                <img src={FooterRightGraphic} alt="footer-right-graphic" />
+            <div className="footer-bottom-right">
+                <img className="footer-bottom-right-img" src={footerBottomRight} alt="footer-bottom-right" />
             </div>
                 <div className="slogan-footer">
                     <h2 className="slogan-footer-txt-up">Magificence.</h2>
@@ -25,12 +25,7 @@ const Footer = () => {
                     <p2 className="slogan-footer-txt-down">The greatest luxury is traveling and staying happy.</p2>
                 </div>
             </div>
-
     );
-
-
-
-
 };
 
 

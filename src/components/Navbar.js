@@ -1,9 +1,9 @@
 import React from 'react';
-import topLong from '../assets/Top-long.png';
-import topStripeTexture from '../assets/Top-stripe-texture.png';
-import logo from '../assets/Logo.png';
-import polishFlag from '../assets/Polski.png';
-import englishFlag from '../assets/English.png';
+import topLong from '../assets/nav/top-left.png';
+import topStripeTexture from '../assets/nav/top-stripe-texture.png';
+import logo from '../assets/nav/logo.png';
+import polishFlag from '../assets/nav/flag-polish.png';
+import englishFlag from '../assets/nav/flag-english.png';
 import '../global.css';
 
 const Navbar = () => {

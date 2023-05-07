@@ -2,12 +2,18 @@ import React from 'react';
 import '../global.css';
 import useGraphic from './useGraphic';
 
-const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName }) => {
+const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName, className }) => {
     const { containerRef, isActive, setActiveGraphic, displayedLocationName } = useGraphic(graphicId, locationName);
 
     return (
-        <div ref={containerRef} className={`graphic-container-item ${!isActive ? 'graphic-disabled' : 'graphic-enabled'}`} onClick={() => setActiveGraphic(graphicId)}>
-            <img src={imageSrc} alt={altText} />
+        <div
+            ref={containerRef}
+            className={`graphic-container-item ${!isActive ? 'graphic-disabled' : 'graphic-enabled'} ${className}`}
+            onClick={() => setActiveGraphic(graphicId)}
+
+        >
+            <div className="background" style={{ backgroundImage: `url(${imageSrc})` }}></div>
+
             <div className='graphic-content'>
                 <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="goto-btn">Go to</a>
                 <h2 className="graphic-text">{locationName}</h2>
@@ -21,6 +27,8 @@ const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName }) => {
                     </div>
                 </div>}
         </div>
+
+
     );
 };
 
