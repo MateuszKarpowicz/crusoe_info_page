@@ -530,6 +530,27 @@ font-size: 14px;
         height: 22px;
     }
 }
+@media (min-width:500px) and (max-width: 1000px){
+    .slogan-footer {
+        top: 10px;
+        left: 250px;
+    }
+    .slogan-footer-txt-mid {
+        font-size: 16px;
+    }
+    
+    .slogan-footer-txt-mid b {
+        font-size: 16px;
+    }
+    
+    .slogan-footer-txt-down {
+        font-size: 16px;
+    }
+    
+    .slogan-footer-txt-up{
+        font-size: 28px;
+    }
+}
 
 
 
