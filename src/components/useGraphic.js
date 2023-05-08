@@ -14,10 +14,9 @@ const useGraphic = (graphicId, locationName) => {
 
     const handleOutsideTouch = (e) => {
         if (activeGraphic && containerRef.current && !containerRef.current.contains(e.target)) {
-            setActiveGraphic(-1);
+            setActiveGraphic(null);
         }
     };
-
 
     useEffect(() => {
         if (window.innerWidth <= 732) {
@@ -31,11 +30,9 @@ const useGraphic = (graphicId, locationName) => {
                 document.removeEventListener('touchstart', handleOutsideTouch);
             }
         };
-    }, [locationName]);
+    }, [locationName, activeGraphic]);
 
     return { containerRef, isActive, setActiveGraphic, displayedLocationName };
 };
-
-
 
 export default useGraphic;
