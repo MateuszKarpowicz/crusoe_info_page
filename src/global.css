@@ -59,9 +59,10 @@ body {
 
 .logo {
     position: absolute;
-    left:-1.1%;
-    width: 120px;
-    height: 120px;
+    top: 8px;
+    left: 15px;
+    width: 56px;
+    height: 70px;
     opacity: 1;
     z-index: 2;
 }
@@ -496,11 +497,13 @@ position: absolute;
         left: -40px;
         top: -40px;
     }
+
     .logo {
         position: absolute;
-        top:-5px;
-        width: 90px;
-        height: 90px;
+        width: 42px;
+        height: 55px;
+        left: 10px;
+
     }
     
 }
