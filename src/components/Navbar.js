@@ -2,6 +2,7 @@ import React from 'react';
 import NavbarImages from '../LazyComponents/NavbarImages';
 import '../global.css';
 
+
 const Navbar = () => {
     const [language, setLanguage] = React.useState("PL");
     const changeLanguage = (newLanguage) => {

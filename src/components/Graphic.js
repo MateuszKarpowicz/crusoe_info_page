@@ -2,8 +2,9 @@ import React from 'react';
 import '../global.css';
 import useGraphic from './useGraphic';
 
-const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName, className }) => {
+const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName, className, language }) => {
     const { containerRef, isActive, setActiveGraphic, displayedLocationName } = useGraphic(graphicId, locationName);
+    const reservationText = language === "PL" ? "Rezerwacja" : "Reservation";
 
     return (
         <div
@@ -17,7 +18,7 @@ const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName, classNam
             <div className='graphic-content'>
                 <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="goto-btn">Go to</a>
                 <h2 className="graphic-text">{locationName}</h2>
-                <button className="reservation-btn">Reservation</button>
+                <button className="reservation-btn">{reservationText}</button>
             </div>
             {!isActive &&
                 <div className="graphic-overlay">

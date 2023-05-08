@@ -1,7 +1,7 @@
 import React from 'react';
 import Graphic from './Graphic';
 
-const Card = ({ graphicId, imageSrc, altText, linkUrl, locationName, className }) => {
+const Card = ({ graphicId, imageSrc, altText, linkUrl, locationName, className, language }) => {
     return (
         <Graphic
             graphicId={graphicId}
@@ -10,6 +10,7 @@ const Card = ({ graphicId, imageSrc, altText, linkUrl, locationName, className }
             linkUrl={linkUrl}
             locationName={locationName}
             className={className}
+            language={language}
         />
     );
 }
