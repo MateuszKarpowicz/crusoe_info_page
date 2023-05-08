@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/crusoe_info_page/static/css/main.9bb73b9c.css",
+    "main.js": "/crusoe_info_page/static/js/main.780c9a41.js",
+    "static/js/787.b05ca5f2.chunk.js": "/crusoe_info_page/static/js/787.b05ca5f2.chunk.js",
+    "static/media/primosten.jpg": "/crusoe_info_page/static/media/primosten.d2c183f34dea619ede49.jpg",
+    "static/media/zakopane.jpg": "/crusoe_info_page/static/media/zakopane.0a660e015fbd2b3f9f42.jpg",
+    "static/media/krakow.jpg": "/crusoe_info_page/static/media/krakow.f1e36befbae995cc26ba.jpg",
+    "static/media/krakow.png": "/crusoe_info_page/static/media/krakow.7e9eba43b1ed710c03ff.png",
+    "static/media/top-stripe-texture.png": "/crusoe_info_page/static/media/top-stripe-texture.905d982aebb84599b83a.png",
+    "static/media/Outfit.woff": "/crusoe_info_page/static/media/Outfit.6ecede82d2f946126182.woff",
+    "static/media/Nineteenth.woff": "/crusoe_info_page/static/media/Nineteenth.9180be26763757734682.woff",
+    "static/media/Nineteenth.woff2": "/crusoe_info_page/static/media/Nineteenth.19b8e1e50034feb4bb05.woff2",
+    "static/media/top-left.png": "/crusoe_info_page/static/media/top-left.bba8fdc7814b303f2355.png",
+    "static/media/logo.png": "/crusoe_info_page/static/media/logo.895ba35594681000da29.png",
+    "index.html": "/crusoe_info_page/index.html",
+    "main.9bb73b9c.css.map": "/crusoe_info_page/static/css/main.9bb73b9c.css.map",
+    "main.780c9a41.js.map": "/crusoe_info_page/static/js/main.780c9a41.js.map",
+    "787.b05ca5f2.chunk.js.map": "/crusoe_info_page/static/js/787.b05ca5f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9bb73b9c.css",
+    "static/js/main.780c9a41.js"
+  ]
+}
