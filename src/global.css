@@ -182,7 +182,7 @@ body {
     height: 100%;
     width: 100%;
     background-size: cover;
-    filter: brightness(0.1);
+    filter: brightness(0.13) grayscale(100%);
     z-index: -1;
     transition: filter 0.666s ease-in-out;
 }
@@ -414,6 +414,11 @@ position: absolute;
     }
     .graphic-disabled .graphic-content {
         opacity: 0;
+        transition: opacity 0.666s ease-in-out;
+    }
+
+    .graphic-disabled .graphic-overlay {
+        opacity: 1;
     }
     .graphic-enabled .graphic-overlay {
         opacity: 0;
@@ -422,8 +427,8 @@ position: absolute;
         opacity: 1;
     }
 
-    .graphic-enabled .graphic-container-item:hover img {
-        filter: brightness(0.5);
+    .graphic-enabled .graphic-container-item:hover .background {
+        filter: brightness(0.5) grayscale(0%);
     }
 
     .graphic-overlay {
@@ -458,6 +463,7 @@ position: absolute;
         height: calc(100vh - 160px);
         margin-top: 60px;
         margin-bottom: 100px;
+        z-index: 10;
     }
 
     .graphic-container-item {
@@ -479,7 +485,7 @@ position: absolute;
     }
 
     .graphic-content {
-        left:-25%;
+
         opacity: 0;
         transition: opacity 0.666s ease-in-out;
     }
@@ -487,12 +493,19 @@ position: absolute;
         font-size: 20px;
         top: calc(30% + 25px);
     }
-    .goto-btn  {
+    .goto-btn {
         width: 60px;
         height: 25px;
         font-size: 15px;
         line-height: 24px;
         border: 3px solid;
+    }
+
+    .goto-btn:hover {
+        transform: scale(1.1);
+        border: 3px solid #FFFFFF;
+
+
     }
     .reservation-btn {
         width: 80px;
@@ -511,6 +524,7 @@ position: absolute;
         width: 480px;
         scale: 1;
         top: -10px;
+        z-index: 0;
     }
     .top-long {
         position: absolute;

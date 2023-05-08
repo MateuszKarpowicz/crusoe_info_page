@@ -8,9 +8,8 @@ const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName, classNam
     return (
         <div
             ref={containerRef}
-            className={`graphic-container-item ${!isActive ? 'graphic-disabled' : 'graphic-enabled'} ${className}`}
+            className={`graphic-container-item ${isActive ? 'graphic-enabled' : 'graphic-disabled'} ${className}`}
             onClick={() => setActiveGraphic(graphicId)}
-
         >
             <div className="background" style={{ backgroundImage: `url(${imageSrc})` }}></div>
 
