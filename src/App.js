@@ -7,10 +7,10 @@ import Card from './components/Card';
 import GraphicContext from './components/GraphicContext';
 import Footer from "./components/Footer";
 
-import graphicKrkImage from './assets/graphic/krakow.webp';
-import graphicPrimoImage from './assets/graphic/primosten.webp';
-import graphicZakoImage from './assets/graphic/zakopane.webp';
-import graphicKrkMob from './assets/graphic/krakow2.webp';
+import graphicKrkImage from './assets/graphic/krakow.png';
+import graphicPrimoImage from './assets/graphic/primosten.jpg';
+import graphicZakoImage from './assets/graphic/zakopane.jpg';
+import graphicKrkMob from './assets/graphic/krakow.jpg';
 
 function App() {
     const [activeGraphic, setActiveGraphic] = useState(null);

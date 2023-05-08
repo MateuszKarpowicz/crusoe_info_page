@@ -12,25 +12,17 @@ const useGraphic = (graphicId, locationName) => {
         setDisplayedLocationName(locationName);
     };
 
-    const handleOutsideTouch = (e) => {
-        if (activeGraphic && containerRef.current && !containerRef.current.contains(e.target)) {
-            setActiveGraphic(null);
-        }
-    };
-
     useEffect(() => {
         if (window.innerWidth <= 732) {
             containerRef.current.addEventListener('touchstart', handleTouch);
-            document.addEventListener('touchstart', handleOutsideTouch);
         }
 
         return () => {
             if (window.innerWidth <= 732) {
                 containerRef.current.removeEventListener('touchstart', handleTouch);
-                document.removeEventListener('touchstart', handleOutsideTouch);
             }
         };
-    }, [locationName, activeGraphic]);
+    }, [locationName]);
 
     return { containerRef, isActive, setActiveGraphic, displayedLocationName };
 };

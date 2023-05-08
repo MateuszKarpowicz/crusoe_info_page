@@ -1,7 +1,10 @@
 import React from 'react';
-import NavbarImages from '../LazyComponents/NavbarImages';
+import topLong from '../assets/nav/top-left.png';
+import topStripeTexture from '../assets/nav/top-stripe-texture.png';
+import logo from '../assets/nav/logo.png';
+import polishFlag from '../assets/nav/flag-polish.png';
+import englishFlag from '../assets/nav/flag-english.png';
 import '../global.css';
-
 
 const Navbar = () => {
     const [language, setLanguage] = React.useState("PL");
@@ -11,27 +14,27 @@ const Navbar = () => {
 
     return (
         <div className="navbar-wrapper">
-            <div className="navbar-container">
-                <div className="top-stripe">
-                    <div className="top-stripe-texture">
-                        <NavbarImages type="topStripeTexture" />
-                    </div>
-                    <div className="flags-container">
-                        <div className="flag-english" onClick={() => changeLanguage("EN")}>
-                            <NavbarImages type="englishFlag" />
-                        </div>
-                        <div className="flag-polish" onClick={() => changeLanguage("PL")}>
-                            <NavbarImages type="polishFlag" />
-                        </div>
-                    </div>
+        <div className="navbar-container">
+            <div className="top-stripe">
+                <div className="top-stripe-texture">
+                    <img src={topStripeTexture} alt="Top Stripe Texture" />
                 </div>
-                <div className="top-long top-long-unobstructive">
-                    <NavbarImages type="topLong" />
-                </div>
-                <div className="logo">
-                    <NavbarImages type="logo" />
+                <div className="flags-container">
+                    <div className="flag-english" onClick={() => changeLanguage("EN")}>
+                        <img src={englishFlag} alt="English Flag"  />
+                    </div>
+                    <div className="flag-polish" onClick={() => changeLanguage("PL")}>
+                        <img src={polishFlag} alt="Polski Flag" />
+                    </div>
                 </div>
             </div>
+                <div className="top-long">
+                    <img src={topLong} alt="Top Long" />
+                </div>
+            <div className="logo">
+                <img src={logo} alt="Logo"/>
+            </div>
+        </div>
         </div>
     );
 }
