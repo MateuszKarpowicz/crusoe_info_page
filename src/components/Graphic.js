@@ -1,9 +1,13 @@
 import React from 'react';
 import '../global.css';
 import useGraphic from './useGraphic';
+import LanguageContext from './LanguageContext.js';
+import { useContext } from 'react';
 
-const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName, className, language }) => {
+const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName, className }) => {
     const { containerRef, isActive, setActiveGraphic, displayedLocationName } = useGraphic(graphicId, locationName);
+    const { language } = useContext(LanguageContext);
+
     const reservationText = language === "PL" ? "Rezerwacja" : "Reservation";
 
     return (

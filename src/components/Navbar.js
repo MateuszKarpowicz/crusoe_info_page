@@ -1,13 +1,12 @@
 import React from 'react';
 import NavbarImages from '../LazyComponents/NavbarImages';
 import '../global.css';
+import { useContext } from 'react';
 
+import LanguageContext from './LanguageContext';
 
 const Navbar = () => {
-    const [language, setLanguage] = React.useState("PL");
-    const changeLanguage = (newLanguage) => {
-        setLanguage(newLanguage);
-    }
+    const { language, changeLanguage } = useContext(LanguageContext);
 
     return (
         <div className="navbar-wrapper">

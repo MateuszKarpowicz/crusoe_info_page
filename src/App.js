@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Card from './components/Card';
 import GraphicContext from './components/GraphicContext';
 import Footer from "./components/Footer";
+import LanguageContext from "./components/LanguageContext";
 
 import graphicKrkImage from './assets/graphic/krakow.webp';
 import graphicPrimoImage from './assets/graphic/primosten.webp';
@@ -15,12 +16,19 @@ import graphicKrkMob from './assets/graphic/krakow2.webp';
 function App() {
     const [activeGraphic, setActiveGraphic] = useState(null);
     const imageSrcKrk = window.innerWidth <= 1000 ? graphicKrkMob : graphicKrkImage;
+    const [language, setLanguage] = useState("EN");
+    const changeLanguage = (newLanguage) => {
+        setLanguage(newLanguage);
+    };
 
 
     return (
         <div className="App">
             <div className="main-container">
-                <Navbar />
+
+                <LanguageContext.Provider value={{ language, changeLanguage }}>
+
+                <Navbar  />
                 <div className="graphics-container">
                     <GraphicContext.Provider value={{ activeGraphic, setActiveGraphic }}>
                         <Card
@@ -50,6 +58,7 @@ function App() {
                     </GraphicContext.Provider>
                 </div>
                 <Footer />
+                </LanguageContext.Provider>
             </div>
         </div>
     );
