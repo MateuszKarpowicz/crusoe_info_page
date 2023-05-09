@@ -13,7 +13,11 @@ const useGraphic = (graphicId, locationName) => {
     };
 
     const handleOutsideTouch = (e) => {
-        if (activeGraphic && containerRef.current && !containerRef.current.contains(e.target)) {
+        if (!activeGraphic) {
+            return;
+        }
+
+        if (containerRef.current && !containerRef.current.contains(e.target)) {
             setActiveGraphic(null);
         }
     };
