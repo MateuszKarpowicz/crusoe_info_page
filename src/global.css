@@ -298,8 +298,8 @@ position: absolute;
     right: 0;
     bottom: 0;
     z-index: 5;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .footer-bottom-right-img {
