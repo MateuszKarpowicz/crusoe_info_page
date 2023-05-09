@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/crusoe_info_page/static/css/main.9bb73b9c.css",
-    "main.js": "/crusoe_info_page/static/js/main.780c9a41.js",
+    "main.css": "/crusoe_info_page/static/css/main.4d5992d8.css",
+    "main.js": "/crusoe_info_page/static/js/main.99ad7ae1.js",
+    "static/js/316.100e6774.chunk.js": "/crusoe_info_page/static/js/316.100e6774.chunk.js",
     "static/js/787.b05ca5f2.chunk.js": "/crusoe_info_page/static/js/787.b05ca5f2.chunk.js",
-    "static/media/primosten.jpg": "/crusoe_info_page/static/media/primosten.d2c183f34dea619ede49.jpg",
-    "static/media/zakopane.jpg": "/crusoe_info_page/static/media/zakopane.0a660e015fbd2b3f9f42.jpg",
-    "static/media/krakow.jpg": "/crusoe_info_page/static/media/krakow.f1e36befbae995cc26ba.jpg",
-    "static/media/krakow.png": "/crusoe_info_page/static/media/krakow.7e9eba43b1ed710c03ff.png",
+    "static/media/zakopane.webp": "/crusoe_info_page/static/media/zakopane.1c7dc1482856f3db5d6b.webp",
+    "static/media/primosten.webp": "/crusoe_info_page/static/media/primosten.5b69b016c560e345e4f0.webp",
+    "static/media/krakow2.webp": "/crusoe_info_page/static/media/krakow2.9a04d35c267b8d5ee65a.webp",
     "static/media/top-stripe-texture.png": "/crusoe_info_page/static/media/top-stripe-texture.905d982aebb84599b83a.png",
     "static/media/Outfit.woff": "/crusoe_info_page/static/media/Outfit.6ecede82d2f946126182.woff",
+    "static/media/krakow.webp": "/crusoe_info_page/static/media/krakow.372ef326d051e5da034a.webp",
     "static/media/Nineteenth.woff": "/crusoe_info_page/static/media/Nineteenth.9180be26763757734682.woff",
     "static/media/Nineteenth.woff2": "/crusoe_info_page/static/media/Nineteenth.19b8e1e50034feb4bb05.woff2",
     "static/media/top-left.png": "/crusoe_info_page/static/media/top-left.bba8fdc7814b303f2355.png",
-    "static/media/logo.png": "/crusoe_info_page/static/media/logo.895ba35594681000da29.png",
+    "static/media/logo.png": "/crusoe_info_page/static/media/logo.25866a4f535279033b0a.png",
     "index.html": "/crusoe_info_page/index.html",
-    "main.9bb73b9c.css.map": "/crusoe_info_page/static/css/main.9bb73b9c.css.map",
-    "main.780c9a41.js.map": "/crusoe_info_page/static/js/main.780c9a41.js.map",
+    "main.4d5992d8.css.map": "/crusoe_info_page/static/css/main.4d5992d8.css.map",
+    "main.99ad7ae1.js.map": "/crusoe_info_page/static/js/main.99ad7ae1.js.map",
+    "316.100e6774.chunk.js.map": "/crusoe_info_page/static/js/316.100e6774.chunk.js.map",
     "787.b05ca5f2.chunk.js.map": "/crusoe_info_page/static/js/787.b05ca5f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bb73b9c.css",
-    "static/js/main.780c9a41.js"
+    "static/css/main.4d5992d8.css",
+    "static/js/main.99ad7ae1.js"
   ]
 }
