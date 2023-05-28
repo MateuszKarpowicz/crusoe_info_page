@@ -4,7 +4,7 @@ import useGraphic from './useGraphic';
 import LanguageContext from './LanguageContext.js';
 import { useContext } from 'react';
 
-const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName, className }) => {
+const Graphic = ({ graphicId, imageSrc, altText, linkUrl, linkUrl2, locationName, className }) => {
     const { containerRef, isActive, setActiveGraphic, displayedLocationName } = useGraphic(graphicId, locationName);
     const { language } = useContext(LanguageContext);
 
@@ -15,14 +15,13 @@ const Graphic = ({ graphicId, imageSrc, altText, linkUrl, locationName, classNam
             ref={containerRef}
             className={`graphic-container-item ${!isActive ? 'graphic-disabled' : 'graphic-enabled'} ${className}`}
             onClick={() => setActiveGraphic(graphicId)}
-
         >
             <div className="background" style={{ backgroundImage: `url(${imageSrc})` }}></div>
 
             <div className='graphic-content'>
                 <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="goto-btn">Go to</a>
                 <h2 className="graphic-text">{locationName}</h2>
-                <button className="reservation-btn">{reservationText}</button>
+                <a href={linkUrl2} target="_blank" rel="noopener noreferrer" className="reservation-btn">{reservationText}</a>
             </div>
             {!isActive &&
                 <div className="graphic-overlay">

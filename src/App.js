@@ -36,6 +36,7 @@ function App() {
                             imageSrc={imageSrcKrk}
                             altText="Graphic Krk"
                             linkUrl="https://apartamenty-krakow.crusoe.info"
+                            linkUrl2="https://apartamenty-krakow.crusoe.info/reservation"
                             locationName="Kraków"
                             className="graphic-krk"
                         />
@@ -43,7 +44,8 @@ function App() {
                             graphicId="graphicPrimo"
                             imageSrc={graphicPrimoImage}
                             altText="Graphic Primo"
-                            linkUrl="https://apartamenty-krakow.crusoe.info"
+                            linkUrl="https://apartaments-primosten.crusoe.info"
+                            linkUrl2="https://apartaments-primosten.crusoe.info/reservation"
                             locationName="Primošten"
                             className="graphic-primo"
                         />
@@ -51,7 +53,8 @@ function App() {
                             graphicId="graphicZako"
                             imageSrc={graphicZakoImage}
                             altText="Graphic Zako"
-                            linkUrl="https://apartamenty-krakow.crusoe.info"
+                            linkUrl="https://apartament-zakopane.crusoe.info"
+                            linkUrl2="https://apartament-zakopane.crusoe.info/reservation"
                             locationName="Zakopane"
                             className="graphic-zako"
                         />
