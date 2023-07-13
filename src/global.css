@@ -377,7 +377,38 @@ position: absolute;
     z-index: 3;
 }
 
+.regulamin {
+    position: absolute;
+    z-index: 999999;
+    right: 30px;
+    top: 55px;
 
+}
+.regulamin span{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 1000px){
+    .regulamin {
+        position: absolute;
+        z-index: 999999;
+        right: 27px;
+        top: 35px;
+
+    }
+    .regulamin span{
+        color: #FFFFFF;
+        font-size: 10px;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+
+    }
+}
 @media screen and (max-width: 1000px)
 {
     .graphic-disabled .graphic-content {
